@@ -70,7 +70,7 @@ def test_factorial_exercise_4(integer):
 
 @pytest.mark.parametrize("input, expected_output", [[(40, 100), math.sin(40)], [(12, 100), math.sin(12)]])
 def test_sin_exercise_4(input, expected_output):
-    assert (calculator.sin(input[0], input[1]) - expected_output) < 1e-9
+    assert (calculator.sin(input[1], input[1]) - expected_output) < 1e-9
 
 @pytest.mark.parametrize("input, expected_output", [[(25,5), 5], [(21,3), 7], [(121,11), 11]])
 def test_divide_exercise_4(input, expected_output):
